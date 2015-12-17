@@ -1,4 +1,4 @@
-package com.ytinrete.algorithm;
+package com.ytinrete.algorithm.easy;
 
 /**
  * Implement atoi to convert a string to an integer.

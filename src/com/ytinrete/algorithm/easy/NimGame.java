@@ -1,4 +1,4 @@
-package com.ytinrete.algorithm;
+package com.ytinrete.algorithm.easy;
 
 /**
  * You are playing the following Nim Game with your friend:

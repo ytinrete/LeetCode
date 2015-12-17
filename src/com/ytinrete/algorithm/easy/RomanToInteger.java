@@ -1,4 +1,4 @@
-package com.ytinrete.algorithm;
+package com.ytinrete.algorithm.easy;
 
 /**
  * Given a roman numeral, convert it to an integer.
