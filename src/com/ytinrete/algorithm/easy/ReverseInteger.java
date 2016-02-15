@@ -1,4 +1,4 @@
-package com.ytinrete.algorithm;
+package com.ytinrete.algorithm.easy;
 
 /**
  * Reverse digits of an integer.
