@@ -1,8 +1,5 @@
-package com.leetcode.algorithm.easy;
+package com.ytinrete.algorithm.easy;
 
-
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Given an array of integers, return indices of the two numbers such that they add up to a specific target.
@@ -29,18 +26,16 @@ public class TwoSum {
 
   }
 
-  public int[] twoSum(int[] numbers, int target) {
-    int[] result = new int[2];
-    Map<Integer, Integer> map = new HashMap<Integer, Integer>();
-    for (int i = 0; i < numbers.length; i++) {
-      if (map.containsKey(target - numbers[i])) {
-        result[1] = i + 1;
-        result[0] = map.get(target - numbers[i]);
-        return result;
+  public int[] twoSum(int[] nums, int target) {
+    int count = nums.length;
+    for (int i = 0; i < count; i++) {
+      for (int j = i + 1; j < count; j++) {
+        if (nums[i] + nums[j] == target) {
+          return new int[]{i, j};
+        }
       }
-      map.put(numbers[i], i + 1);
     }
-    return result;
+    return new int[]{0, 0};
   }
 
 
