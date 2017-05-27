@@ -57,6 +57,7 @@ public class LongestSubstringWithoutRepeatingCharacters {
           for (int i = lastIndex; i <= targetIndex; i++) {
             if (matrix[s.charAt(i)] == -1) {
               if (i != targetIndex) {
+                //i==targetIndex leave to outside loop
                 matrix[s.charAt(i)] = i;
               }
 
